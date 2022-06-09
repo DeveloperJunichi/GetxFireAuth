@@ -1,0 +1,22 @@
+name: firebase_auth_getx
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment:
+  sdk: '>=2.17.1 <3.0.0'
+
+dependencies:
+  cupertino_icons: ^1.0.2
+  get: 4.6.5
+  flutter:
+    sdk: flutter
+  firebase_core: ^1.17.1 # firebaseを使うためのパッケージ
+  firebase_auth: ^3.3.19 # FirebaseAuthを使うためのパッケージ
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true

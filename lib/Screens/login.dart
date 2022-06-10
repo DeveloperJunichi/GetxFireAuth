@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class Login extends StatelessWidget {
+  // メールアドレスを登録するTextEditingController
   final emailController = TextEditingController();
+  // パスワードを登録するTextEditingController
   final passwordController = TextEditingController();
 
   @override
@@ -12,6 +14,7 @@ class Login extends StatelessWidget {
       appBar: AppBar(),
       body: Center(
         child: Padding(
+          // vertical(垂直), horizontal(水平)で余白を作りたいラインを指定して余白が作れます。
           padding: const EdgeInsets.symmetric(horizontal: 12.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -20,6 +23,7 @@ class Login extends StatelessWidget {
                 "ログイン画面",
                 style: Get.textTheme.headline3,
               ),
+              // メールアドレスを入力するテキストフィールド
               TextField(
                 decoration: InputDecoration(
                   icon: Icon(Icons.email),
@@ -28,6 +32,7 @@ class Login extends StatelessWidget {
                 ),
                 controller: emailController,
               ),
+              // パスワードを入力するテキストフィールド
               TextField(
                 decoration: InputDecoration(
                   icon: Icon(Icons.password),
@@ -41,6 +46,7 @@ class Login extends StatelessWidget {
                 height: 30,
               ),
               Row(
+                // spaceAroundは、子要素の間に均等なスペースを空ける
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   ElevatedButton(
